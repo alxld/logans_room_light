@@ -1,22 +1,16 @@
 {
     "on-press": [
-        [ [ "RightLight", "light.xanders_room_group", 255 ],  [ "RightLight", "light.xanders_light_strip_n", "Disable" ], [ "RightLight", "light.xanders_light_strip_s", "Disable" ], [ "RightLight", "light.xanders_light_bar_e", "Disable" ], [ "RightLight", "light.xanders_light_bar_w", "Disable" ] ],
-        [ [ "RightLight", "light.xanders_room_group", "Vivid" ] ],
-        [ [ "RightLight", "light.xanders_room_group", "Disable"], [ "RightLight", "light.xanders_light_strip_n", "One"], [ "RightLight", "light.xanders_light_strip_s", "One"], [ "RightLight", "light.xanders_light_bar_e", "Two"], [ "RightLight", "light.xanders_light_bar_w", "Two"] ]
+        [ [ "RightLight", "light.logans_room_group", 255 ],  [ "RightLight", "light.logans_light_strip", "Disable" ], [ "RightLight", "light.repeater_test_lamp", "Disable" ] ],
+        [ [ "RightLight", "light.logans_room_group", "Vivid" ] ],
+        [ [ "RightLight", "light.logans_room_group", "Disable"], [ "RightLight", "light.logans_light_strip", "One"], [ "RightLight", "light.repeater_test_lamp", 128] ]
     ],
     "up-press": [
-        [ [ "RightLight", "light.xanders_room_group", 192 ] ],
-        [ [ "RightLight", "light.xanders_room_group", "Disable"], [ "RightLight", "light.xanders_light_strip_n", "Disable" ], [ "RightLight", "light.xanders_light_strip_s", "Disable" ], [ "RightLight", "light.xanders_light_bar_e", "Disable" ], [ "RightLight", "light.xanders_light_bar_w", "Disable" ], ["Scene", "scene.xanders_room_blue"] ],
-        [ [ "RightLight", "light.xanders_room_group", "Disable"], [ "RightLight", "light.xanders_light_strip_n", "Disable" ], [ "RightLight", "light.xanders_light_strip_s", "Disable" ], [ "RightLight", "light.xanders_light_bar_e", "Disable" ], [ "RightLight", "light.xanders_light_bar_w", "Disable" ], ["Scene", "scene.xanders_room_green"] ],
-        [ [ "RightLight", "light.xanders_room_group", "Disable"], [ "RightLight", "light.xanders_light_strip_n", "Disable" ], [ "RightLight", "light.xanders_light_strip_s", "Disable" ], [ "RightLight", "light.xanders_light_bar_e", "Disable" ], [ "RightLight", "light.xanders_light_bar_w", "Disable" ], ["Scene", "scene.xanders_room_red"] ]
+        [ [ "RightLight", "light.logans_light_strip", "Disable"], [ "RightLight", "light.repeater_test_lamp", "Disable"], [ "RightLight", "light.logans_room_group", 192 ] ]
     ],
     "down-press": [
-        [ [ "RightLight", "light.xanders_room_group", 75 ] ],
-        [ [ "RightLight", "light.xanders_room_group", "Disable"], [ "RightLight", "light.xanders_light_strip_n", "Disable" ], [ "RightLight", "light.xanders_light_strip_s", "Disable" ], [ "RightLight", "light.xanders_light_bar_e", "Disable" ], [ "RightLight", "light.xanders_light_bar_w", "Disable" ], ["Scene", "scene.xanders_room_blue_dim"] ],
-        [ [ "RightLight", "light.xanders_room_group", "Disable"], [ "RightLight", "light.xanders_light_strip_n", "Disable" ], [ "RightLight", "light.xanders_light_strip_s", "Disable" ], [ "RightLight", "light.xanders_light_bar_e", "Disable" ], [ "RightLight", "light.xanders_light_bar_w", "Disable" ], ["Scene", "scene.xanders_room_green_dim"] ],
-        [ [ "RightLight", "light.xanders_room_group", "Disable"], [ "RightLight", "light.xanders_light_strip_n", "Disable" ], [ "RightLight", "light.xanders_light_strip_s", "Disable" ], [ "RightLight", "light.xanders_light_bar_e", "Disable" ], [ "RightLight", "light.xanders_light_bar_w", "Disable" ], ["Scene", "scene.xanders_room_red_dim"] ]
+        [ [ "RightLight", "light.logans_light_strip", "Disable"], [ "RightLight", "light.repeater_test_lamp", "Disable"], [ "RightLight", "light.logans_room_group", 75 ] ]
     ],
     "off-press": [
-        [ [ "RightLight", "light.xanders_light_strip_n", "Disable" ], [ "RightLight", "light.xanders_light_strip_s", "Disable" ], [ "RightLight", "light.xanders_light_bar_e", "Disable" ], [ "RightLight", "light.xanders_light_bar_w", "Disable" ], [ "RightLight", "light.xanders_room_group", 0 ] ]
+        [ [ "RightLight", "light.logans_room_group", "Disable" ], [ "RightLight", "light.logans_light_strip", "Disable" ], [ "RightLight", "light.repeater_test_lamp", "Disable" ], [ "RightLight", "light.logans_room_group", 0 ] ]
     ]
 }
