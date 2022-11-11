@@ -53,9 +53,9 @@ from . import DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
 
-light_entity = "light.logans_room_group_new"
+light_entity = "light.logans_room_group"
 strip_entity = "light.logans_light_strip"
-lamp_entity = "light.logans_lamp"
+lamp_entity = "light.repeater_test_lamp"
 
 # harmony_entity = "remote.theater_harmony_hub"
 switch_action = "zigbee2mqtt/Logans Switch/action"
