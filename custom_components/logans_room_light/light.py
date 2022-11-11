@@ -170,6 +170,7 @@ class LogansRoomLight(LightEntity):
         """Instantiate RightLight"""
         self._rightlight = RightLight(self._light, self.hass)
         self._rightlight2 = RightLight(self._lamp, self.hass)
+        self._rightlight3 = RightLight(self._strip, self.hass)
 
         #        #temp = self.hass.states.get(harmony_entity).new_state
         #        #_LOGGER.error(f"Harmony state: {temp}")
@@ -345,9 +346,14 @@ class LogansRoomLight(LightEntity):
                 brightness=self._brightness,
                 brightness_override=self._brightness_override,
             )
+            await self._rightlight3.turn_on(
+                brightness=self._brightness,
+                brightness_override=self._brightness_override,
+            )
         else:
             await self._rightlight.turn_on_specific(data)
             await self._rightlight2.turn_on_specific(data)
+            await self._rightlight3.turn_on_specific(data)
 
         self.async_schedule_update_ha_state(force_refresh=True)
 
@@ -358,6 +364,7 @@ class LogansRoomLight(LightEntity):
         self.switched_on = True
         await self._rightlight.turn_on(mode=self._mode)
         await self._rightlight2.turn_on(mode=self._mode)
+        await self._rightlight3.turn_on(mode=self._mode)
         self.async_schedule_update_ha_state(force_refresh=True)
 
     async def async_turn_off(self, **kwargs: Any) -> None:
@@ -368,6 +375,7 @@ class LogansRoomLight(LightEntity):
         self.switched_on = False
         await self._rightlight.disable_and_turn_off()
         await self._rightlight2.disable_and_turn_off()
+        await self._rightlight3.disable_and_turn_off()
         self.async_schedule_update_ha_state(force_refresh=True)
 
     async def up_brightness(self, **kwargs) -> None:
@@ -476,12 +484,14 @@ class LogansRoomLight(LightEntity):
                         rl = self._rightlight
                     elif ent == self._lamp:
                         rl = self._rightlight2
+                    elif ent == self._strip:
+                        rl = self._rightlight3
                     else:
                         _LOGGER.error(
-                            f"{self_name} error - unknown entity in button_map.json: {ent}"
+                            f"{self._name} error - unknown entity in button_map.json: {ent}"
                         )
                         _LOGGER.error(
-                            f"{self_name}         should be either {self._light} or {self._lamp}"
+                            f"{self._name}         should be either {self._light}, {self._lamp}, {self._strip}"
                         )
                         continue
 
