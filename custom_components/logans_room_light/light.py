@@ -10,19 +10,9 @@ from . import DOMAIN
 sys.path.append("custom_components/new_light")
 from new_light import NewLight
 
-light_entity = "light.logans_room_group"
-strip_entity = "light.logans_light_strip"
-lamp_entity = "light.repeater_test_lamp"
-
-# harmony_entity = "remote.theater_harmony_hub"
-switch_action = "zigbee2mqtt/Logan's Switch/action"
-# motion_sensor_action = "zigbee2mqtt/Gameroom Motion Sensor"
-brightness_step = 43
-motion_sensor_brightness = 192
-has_harmony = False
-has_motion_sensor = False
-has_switch = True
-has_json = True
+# light_entity = "light.logans_room_group"
+# strip_entity = "light.logans_light_strip"
+# lamp_entity = "light.repeater_test_lamp"
 
 
 async def async_setup_platform(
