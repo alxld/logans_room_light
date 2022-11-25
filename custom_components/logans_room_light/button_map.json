@@ -1,16 +1,6 @@
 {
-    "on-press": [
-        [ [ "RightLight", "light.logans_room_group", 255 ],  [ "RightLight", "light.logans_light_strip", "Disable" ], [ "RightLight", "light.repeater_test_lamp", "Disable" ] ],
+    "on-hold": [
         [ [ "RightLight", "light.logans_room_group", "Vivid" ] ],
-        [ [ "RightLight", "light.logans_room_group", "Disable" ], [ "RightLight", "light.logans_light_strip", "One" ] , [ "RightLight", "light.repeater_test_lamp", 128 ] ]
-    ],
-    "up-press": [
-        [ [ "RightLight", "light.logans_light_strip", "Disable" ], [ "RightLight", "light.repeater_test_lamp", "Disable" ], [ "RightLight", "light.logans_room_group", 192 ] ]
-    ],
-    "down-press": [
-        [ [ "RightLight", "light.logans_light_strip", "Disable" ], [ "RightLight", "light.repeater_test_lamp", "Disable" ], [ "RightLight", "light.logans_room_group", 75 ] ]
-    ],
-    "off-press": [
-        [ [ "RightLight", "light.logans_light_strip", "Disable" ], [ "RightLight", "light.repeater_test_lamp", "Disable" ], [ "RightLight", "light.logans_room_group", 0 ] ]
+        [ [ "RightLight", "light.logans_room_group", "Disable" ], [ "RightLight", "light.logans_light_strip", "One" ] , [ "RightLight", "light.logans_light_bar_e", "One" ], [ "RightLight", "light.logans_light_bar_w", "Two" ] ]
     ]
 }
