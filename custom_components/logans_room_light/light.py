@@ -44,8 +44,8 @@ class LogansRoomLight(NewLight):
 
     def __init__(self) -> None:
         """Initialize LogansRoom Light."""
-        super(TheaterLight, self).__init__(
-            "Theater", domain=DOMAIN, debug=False, debug_rl=False
+        super(LogansRoomLight, self).__init__(
+            "Logan's Room", domain=DOMAIN, debug=False, debug_rl=False
         )
         self.entities["light.logans_room_group"] = None
         self.swtich = "Logan's Switch"
