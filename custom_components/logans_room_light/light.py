@@ -38,4 +38,4 @@ class LogansRoomLight(NewLight):
             "Logan's Room", domain=DOMAIN, debug=False, debug_rl=False
         )
         self.entities["light.logans_room_group"] = None
-        self.swtich = "Logan's Switch"
+        self.switch = "Logan's Switch"
