@@ -1,7 +1,8 @@
 {
     "on-hold": [
-        [ [ "RightLight", "light.logans_room_group", "Vivid" ] ],
-        [ [ "RightLight", "light.logans_room_group", "Fun" ] ],
-        [ [ "RightLight", "light.logans_room_group", "Disable" ], [ "RightLight", "light.logans_light_strip", "One" ] , [ "RightLight", "light.logans_light_bar_e", "One" ], [ "RightLight", "light.logans_light_bar_w", "Two" ] ]
+        [ [ "RightLight", "light.logans_room_group", "Vivid" ], [ "RightLight", "light.logans_light_strip", "Disable" ], [ "RightLight", "light.logans_light_bar_e", "Disable" ], [ "RightLight", "light.logans_light_bar_w", "Disable" ], [ "RightLight", "light.logans_closet_light_strip", "Disable"], [ "RightLight", "light.logans_desk_light_strip", "Disable"] ],
+        [ [ "RightLight", "light.logans_room_group", "Fun" ], [ "RightLight", "light.logans_light_strip", "Disable" ], [ "RightLight", "light.logans_light_bar_e", "Disable" ], [ "RightLight", "light.logans_light_bar_w", "Disable" ], [ "RightLight", "light.logans_closet_light_strip", "Disable"], [ "RightLight", "light.logans_desk_light_strip", "Disable"] ],
+        [ [ "RightLight", "light.logans_room_group", "Disable" ], [ "RightLight", "light.logans_light_strip", "One" ], [ "RightLight", "light.logans_light_bar_e", "One" ], [ "RightLight", "light.logans_light_bar_w", "Two" ], [ "RightLight", "light.logans_closet_light_strip", "Two"], [ "RightLight", "light.logans_desk_light_strip", "One"] ]
+
     ]
 }
