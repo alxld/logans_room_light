@@ -10,10 +10,6 @@ from . import DOMAIN
 sys.path.append("custom_components/new_light")
 from new_light import NewLight
 
-# light_entity = "light.logans_room_group"
-# strip_entity = "light.logans_light_strip"
-# lamp_entity = "light.repeater_test_lamp"
-
 
 async def async_setup_platform(
     hass: HomeAssistant,
