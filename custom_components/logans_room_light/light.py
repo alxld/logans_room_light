@@ -39,7 +39,8 @@ class LogansRoomLight(NewLight):
         super(LogansRoomLight, self).__init__(
             "Logan's Room", domain=DOMAIN, debug=False, debug_rl=False
         )
-        self.entities[lamps_entity, ceiling_entity] = None
+        self.entities[lamps_entity] = None
+        self.entities[ceiling_entity] = None
         self.entities_below_threshold[lamps_entity] = None
         self.entities_above_threshold[ceiling_entity] = None
         self.has_brightness_threshold = True
