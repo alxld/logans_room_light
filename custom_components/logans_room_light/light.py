@@ -41,7 +41,7 @@ class LogansRoomLight(NewLight):
         )
         self.entities[lamps_entity] = None
         self.entities[ceiling_entity] = None
-        self.entities_below_threshold[lamps_entity] = None
-        self.entities_above_threshold[ceiling_entity] = None
+        self.entities_below_threshold = [lamps_entity]
+        self.entities_above_threshold = [ceiling_entity]
         self.has_brightness_threshold = True
         self.switch = "Logan's Switch"
