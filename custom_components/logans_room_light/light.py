@@ -10,6 +10,8 @@ from . import DOMAIN
 sys.path.append("custom_components/new_light")
 from new_light import NewLight
 
+ceiling_entity = "light.logan_s_room_ceiling_group"
+lamps_entity = "light.logan_s_room_lamps_group"
 # light_entity = "light.logans_room_group"
 # strip_entity = "light.logans_light_strip"
 # lamp_entity = "light.repeater_test_lamp"
@@ -37,5 +39,8 @@ class LogansRoomLight(NewLight):
         super(LogansRoomLight, self).__init__(
             "Logan's Room", domain=DOMAIN, debug=False, debug_rl=False
         )
-        self.entities["light.logans_room_group"] = None
+        self.entities[lamps_entity, ceiling_entity] = None
+        self.entities_below_threshold[lamps_entity] = None
+        self.entities_above_threshold[ceiling_entity] = None
+        self.has_brightness_threshold = True
         self.switch = "Logan's Switch"
